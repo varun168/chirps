@@ -1,0 +1,60 @@
+<template>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <span>Chirps App</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+    <div class="row">
+     <div class="col-md-2">
+        
+            <img style="margin-top:150px; margin-left:50px;" src="img/tweet.png" width="200px;">
+            
+        </div>
+        
+        <div class="col-md-4">
+    <form class=" login-form" submit.delegate="login()">
+		<div class="panel panel-primary">
+            <div class="panel-heading">Login</div>
+			<div class="panel-body">
+		  	<label>Username</label>
+		    <input class="form-control" type="text" placeholder="username" value.bind="username" />
+                <label>Password</label>
+		    <input class="form-control" type="password" placeholder="password" value.bind="password" />
+		    <button class="btn btn-primary pull-right" type="submit">Login</button>
+		    <span class="text-danger">${error}</span>
+			</div>
+		</div>
+  </form>
+    
+        </div>
+        
+        <!-- register users -->
+
+ <div class="col-md-6">
+    <form class="register-form" submit.delegate="register()">
+		<div class="panel panel-primary">
+            <div class="panel-heading">Register Here</div>
+			<div class="panel-body">
+		  	<label>Username *</label>
+		    <input class="form-control" type="text" placeholder="username" value.bind="usernameRegister" />
+                <label>Password *</label>
+		    <input class="form-control" type="password" placeholder="password" value.bind="passwordRegister" />
+                    <label>Email</label>
+		    <input class="form-control" type="password" placeholder="Email" value.bind="email" />
+		    <button class="btn btn-primary pull-right" type="submit">Register</button>
+		    <span class="text-danger">${errorSignu}</span>
+			</div>
+		</div>
+  </form>
+    
+</div>
+        
+        
+    </div>
+  
+</template>

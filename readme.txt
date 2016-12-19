@@ -1,0 +1,1 @@
+Chirps is a social networking web application on the aurelia framework.
